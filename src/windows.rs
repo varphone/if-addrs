@@ -256,7 +256,7 @@ impl WindowsIfChangeNotifier {
                 AF_UNSPEC,
                 Some(if_change_callback),
                 ret.tx as *const c_void,
-                false,
+                false as _,
                 &mut ret.handle,
             )
         };
